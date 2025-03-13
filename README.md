@@ -13,7 +13,7 @@ with $Q$. This metric is sensitive to ringing artifacts, but not to a slight inc
 ![XY-Deblur](Network_Architectures/XY_Deblur_arch.png)
 | --- |
 | XY-Deblur |
-| XY-Deblur introduced by Ji et. al. [13] is a single encoder
+XY-Deblur introduced by Ji et. al. [13] is a single encoder
 multiple decoder architecture initially intended for restoring
 images degraded by motion blur. The model leverages the
 fact that employing multiple decoders allows for decomposing
@@ -22,7 +22,7 @@ vertical. The use of shared kernels amongst the decoders
 allows for improved deblurring performance. These caveats
 keep the total number of trainable parameters identical to a
 standard U-Net, viz. 4.2 million, while producing significantly
-sharper restorations |
+sharper restorations
 
 ![EHNet](Network_Architectures/EHNet.png)
 | --- |
