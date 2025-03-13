@@ -28,6 +28,7 @@ EHNet proposed by Ho et. al. [2] is a transformer based architecture that combin
 | --- |
 | ARKNet |
 
+The image from has been taken from the paper - [3](https://ieeexplore.ieee.org/abstract/document/10743912) <br>
 ARKNet proposed by Aurangabadkar et. al. [3] is a standard U-Net based architecture comprising of 4 encoder layers, where each layer consists of 5 convolutional blocks. Each block, in turn, comprises of a single 3 × 3 convolution layer, followed by Batch Normalization and GELU activation. The model contains a total of 4.2 million trainable parameters.
 
 ## References
