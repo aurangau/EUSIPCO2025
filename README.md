@@ -13,6 +13,7 @@ with $Q$. This metric is sensitive to ringing artifacts, but not to a slight inc
 ![XY-Deblur](Network_Architectures/XY_Deblur_arch.png)
 | --- |
 | XY-Deblur |
+
 XY-Deblur introduced by Ji et. al. [13] is a single encoder
 multiple decoder architecture initially intended for restoring
 images degraded by motion blur. The model leverages the
