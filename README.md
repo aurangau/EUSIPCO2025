@@ -13,3 +13,11 @@ with $Q$. This metric is sensitive to ringing artifacts, but not to a slight inc
 ![XY-Deblur](Network_Architectures/XY_Deblur_arch.png)
 | --- |
 | XY-Deblur | 
+
+![EHNet](Network_Architectures/EHNet.png)
+| --- |
+| EHNet |
+
+![ARKNet](Network_Architectures/ARKNet_EUSIPCO.png)
+| --- |
+| ARKNet |
