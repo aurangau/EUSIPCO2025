@@ -8,3 +8,8 @@ Recent research has explored complex loss functions for deblurring. In this work
 with $Q$. This metric is sensitive to ringing artifacts, but not to a slight increase in sharpness, thus making it a fair metric for comparing restorations from deblurring mechanisms. Our approach shows an increase of 15% in sharpness ($Q$) and up to 10% in $\Omega$ over the use of standard losses.
 
 ## Network Architectures
+
+### XY-Deblur
+![XY-Deblur](Network_Architectures/XY_Deblur_arch.png)
+| --- |
+| XY-Deblur | 
