@@ -13,17 +13,8 @@ with $Q$. This metric is sensitive to ringing artifacts, but not to a slight inc
 ![XY-Deblur](Network_Architectures/XY_Deblur_arch.png)
 | --- |
 | XY-Deblur |
-
-XY-Deblur introduced by Ji et. al. [13] is a single encoder
-multiple decoder architecture initially intended for restoring
-images degraded by motion blur. The model leverages the
-fact that employing multiple decoders allows for decomposing
-features into directional components, namely horizontal and
-vertical. The use of shared kernels amongst the decoders
-allows for improved deblurring performance. These caveats
-keep the total number of trainable parameters identical to a
-standard U-Net, viz. 4.2 million, while producing significantly
-sharper restorations
+The image above has been taken from the paper - https://openaccess.thecvf.com/content/CVPR2022/papers/Ji_XYDeblur_Divide_and_Conquer_for_Single_Image_Deblurring_CVPR_2022_paper.pdf 
+XY-Deblur introduced by Ji et. al. [1] is a single encoder multiple decoder architecture initially intended for restoring images degraded by motion blur. The model leverages the fact that employing multiple decoders allows for decomposing features into directional components, namely horizontal and vertical. The use of shared kernels amongst the decoders allows for improved deblurring performance. These caveats keep the total number of trainable parameters identical to a standard U-Net, viz. 4.2 million, while producing significantly sharper restorations. 
 
 ![EHNet](Network_Architectures/EHNet.png)
 | --- |
@@ -32,3 +23,8 @@ sharper restorations
 ![ARKNet](Network_Architectures/ARKNet_EUSIPCO.png)
 | --- |
 | ARKNet |
+
+## References
+[1] Seo-Won Ji, Jeongmin Lee, Seung-Wook Kim, Jun-Pyo Hong, Seung-Jin Baek, Seung-Won Jung, and Sung-Jea Ko, “Xydeblur: divide and conquer for single image deblurring,” in Proceedings of the IEEE/CVF conference on computer vision and pattern recognition, 2022, pp.17421–17430
+[2] Uditangshu Aurangabadkar, Darren Ramsook, and Anil Kokaram, “A sharpness based loss function for removing out-of-focus blur,” in 2024 IEEE 26th International Workshop on Multimedia Signal Processing (MMSP), 2024, pp. 1–6.
+[3] Quoc-Thien Ho, Minh-Thien Duong, Seongsoo Lee, and Min-Cheol Hong, “Ehnet: Efficient hybrid network with dual attention for image deblurring,” Sensors, vol. 24, no. 20, pp. 6545, 2024.
