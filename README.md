@@ -63,11 +63,15 @@ For the experiments listed in the paper, for the experiments listed in the paper
 ### Measuring $\Omega$
 To measure $\Omega$, we first divide the images - GT ($I$) and restored (\tilde{I}) into non-overlapping patches of size $m \times m$. A patch from the GT image is denoted by $p$ and a patch from the restored image is denoted by $\tilde{p}$. For each patch from both the images, we measure the corresponding $Q$ values, which we denote by $Q$ for the GT patch and $\tilde{Q}$ for the restored patch. To determine the _amount_ of ringing, we measure a deviation ratio $\alpha$ which can be given as follows.
 ```math
-\alpha = \frac{|\tilde{Q} - Q}{Q}
+\alpha = \frac{|\tilde{Q} - Q|}{Q}
 ```
 A higher value of $\alpha$ corresponds to the presence of ringing in the restored patch. We then measure PSNR between the two patches, clipping it at 50 dB as to avoid producing a value of $\infty$ when both patches are identical. This can be mathematically defined as follows.
 ```math
 P' = \min{(PSNR(p, \tilde{p}), 50)}
+```
+Finally, we combine the two metrics using the weighting function as follows.
+```math
+\Omega = (1 - \sigma(\alpha)) \cdot P' + \sigma(\alpha) \cdot \tilde{Q}
 ```
 
 ## References
