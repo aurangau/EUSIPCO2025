@@ -34,7 +34,7 @@ ARKNet proposed by Aurangabadkar et. al. [3] is a standard U-Net based architect
 ## Loss Functions
 We first define a restored image as $\tilde{I}$ and a Ground Truth (GT) image as $I$. Let us now list the losses that were used by the authors to train their models initially. These losses are denoted by $\cal L_\varphi$. To use the proposed loss $Q$ [3] in the training routine, we use a composite loss that is defined as follows:
 ```math
-\cal L = \cal L_\varphi (I, \tilde{I}) - \beta \cdot Q
+\mathcal{L} = \mathcal{L}_\varphi (I, \tilde{I}) - \beta \cdot Q(\tilde{I})
 ```
 XY-Deblur uses the $\mathbr{l_1}$ loss 
 
