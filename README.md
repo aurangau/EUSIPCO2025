@@ -38,7 +38,7 @@ We first define a restored image as $\tilde{I}$ and a Ground Truth (GT) image as
 ```
 Table 1 shows the model and the associated loss $\mathcal{L}_\varphi$ used in training.
 **Table 1: Models and their losses**
-| Model Name | $\mathcal{L}_\varphi |
+| Model Name | $\mathcal{L}_\varphi$ |
 | ---------- | -------------------- |
 | XY- Deblur |         QA           |
 XY-Deblur uses the $\mathcal{l_1}$ loss 
