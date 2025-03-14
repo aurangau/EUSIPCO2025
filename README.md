@@ -58,6 +58,7 @@ Therefore, our goal is to combine the both in a non-linear fashion, thus proposi
 \sigma(\alpha)  = \frac{1}{1 + e^{R(\alpha - \alpha_0)}}
 ```
 
+For the experiments listed in the paper, for the experiments listed in the paper, we use $R$ = 5 and $\alpha_0$ = 1.2. These parameters control the amount of _acceptable sharpness_. Therefore, an increase in sharpness leads to an increase in $\Omega$ and when ringing artifacts set in, $\Omega$ decreases. 
 ## References
 [1] Seo-Won Ji, Jeongmin Lee, Seung-Wook Kim, Jun-Pyo Hong, Seung-Jin Baek, Seung-Won Jung, and Sung-Jea Ko, “Xydeblur: divide and conquer for single image deblurring,” in Proceedings of the IEEE/CVF conference on computer vision and pattern recognition, 2022, pp.17421–17430
 [2] Quoc-Thien Ho, Minh-Thien Duong, Seongsoo Lee, and Min-Cheol Hong, “Ehnet: Efficient hybrid network with dual attention for image deblurring,” Sensors, vol. 24, no. 20, pp. 6545, 2024.
