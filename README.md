@@ -36,7 +36,12 @@ We first define a restored image as $\tilde{I}$ and a Ground Truth (GT) image as
 ```math
 \mathcal{L} = \mathcal{L}_\varphi (I, \tilde{I}) - \beta \cdot Q(\tilde{I})
 ```
-XY-Deblur uses the $\mathbr{l_1}$ loss 
+Table 1 shows the model and the associated loss $\mathcal{L}_\varphi$ used in training.
+**Table 1: Models and their losses**
+| Model Name | $\mathcal{L}_\varphi |
+| ---------- | -------------------- |
+| XY- Deblur |         QA           |
+XY-Deblur uses the $\mathcal{l_1}$ loss 
 
 ## References
 [1] Seo-Won Ji, Jeongmin Lee, Seung-Wook Kim, Jun-Pyo Hong, Seung-Jin Baek, Seung-Won Jung, and Sung-Jea Ko, “Xydeblur: divide and conquer for single image deblurring,” in Proceedings of the IEEE/CVF conference on computer vision and pattern recognition, 2022, pp.17421–17430
