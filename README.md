@@ -48,7 +48,10 @@ Here $\mathcal{L}_f$ is the frequency loss. <br>
 To use $Q$ as part of the training regimes for the methods listed above, we empirically set $\beta$ to 0.1 for ARKNet, 0.01 for XY-Deblur and 0.1 for EHNet. 
 
 ## Metric $\Omega$
+We wish to devise a metric which increases with sharpness, but decreases with ringing artifacts present in an image. We must note that PSNR works correctly, albeit it lacks the information and knowledge about sharpness, thus leading to a low value even for images that are sharp and have no artifacts. $Q$ is reliable when the PSNR is high, but becomes unreliable when the PSNR is low. An example of this can be seen in Figure 4. 
+![Plots](Omega_Plots/composite_Plot_upd.png)
 
+Therefore, our goal is to combine the both in a non-linear fashion, thus proposing $\Omega$ which is calculated per patch and is then averaged for the entire image. 
 
 ## References
 [1] Seo-Won Ji, Jeongmin Lee, Seung-Wook Kim, Jun-Pyo Hong, Seung-Jin Baek, Seung-Won Jung, and Sung-Jea Ko, “Xydeblur: divide and conquer for single image deblurring,” in Proceedings of the IEEE/CVF conference on computer vision and pattern recognition, 2022, pp.17421–17430
