@@ -12,21 +12,21 @@ with $Q$. This metric is sensitive to ringing artifacts, but not to a slight inc
 ### XY-Deblur
 ![XY-Deblur](Network_Architectures/XY_Deblur_arch.png)
 | --- |
-| XY-Deblur |
+| Figure 1: Architecture of XY-Deblur |
 
 The image above has been taken from the paper - [1](https://openaccess.thecvf.com/content/CVPR2022/papers/Ji_XYDeblur_Divide_and_Conquer_for_Single_Image_Deblurring_CVPR_2022_paper.pdf) <br>
 XY-Deblur introduced by Ji et. al. [1] is a single encoder multiple decoder architecture initially intended for restoring images degraded by motion blur. The model leverages the fact that employing multiple decoders allows for decomposing features into directional components, namely horizontal and vertical. The use of shared kernels amongst the decoders allows for improved deblurring performance. These caveats keep the total number of trainable parameters identical to a standard U-Net, viz. 4.2 million, while producing significantly sharper restorations. 
 
 ![EHNet](Network_Architectures/EHNet.png)
 | --- |
-| EHNet |
+| Figure 2: Architecture of EHNet |
 
 The image above has been taken from the paper - [2](https://www.mdpi.com/1424-8220/24/20/6545) <br>
 EHNet proposed by Ho et. al. [2] is a transformer based architecture that combines Convolutional Neural Networks (CNNs) and transformers to create a hybrid deblurring mechanism. The CNNs allow for efficient local feature extraction, whereas the transformer decoder with dual-attention enable the model to capture spatial and channel-wise dependencies. The model consists of approximately 8.7 million trainable parameters.
 
 ![ARKNet](Network_Architectures/ARKNet_EUSIPCO.png)
 | --- |
-| ARKNet |
+| Figure 3: Architecture of ARKNet |
 
 The image from has been taken from the paper - [3](https://ieeexplore.ieee.org/abstract/document/10743912) <br>
 ARKNet proposed by Aurangabadkar et. al. [3] is a standard U-Net based architecture comprising of 4 encoder layers, where each layer consists of 5 convolutional blocks. Each block, in turn, comprises of a single 3 × 3 convolution layer, followed by Batch Normalization and GELU activation. The model contains a total of 4.2 million trainable parameters.
@@ -50,6 +50,9 @@ To use $Q$ as part of the training regimes for the methods listed above, we empi
 ## Metric $\Omega$
 We wish to devise a metric which increases with sharpness, but decreases with ringing artifacts present in an image. We must note that PSNR works correctly, albeit it lacks the information and knowledge about sharpness, thus leading to a low value even for images that are sharp and have no artifacts. $Q$ is reliable when the PSNR is high, but becomes unreliable when the PSNR is low. An example of this can be seen in Figure 4. 
 ![Fig. 4: Behaviour of $\Omega$](Omega_Plots/composite_Plot_upd.png)
+| --- |
+| Figure 4: Behaviour of $\Omega$ | 
+
 
 Therefore, our goal is to combine the both in a non-linear fashion, thus proposing $\Omega$ which is calculated per patch and is then averaged for the entire image. 
 
