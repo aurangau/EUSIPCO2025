@@ -47,6 +47,9 @@ Table 1 shows the model and the associated loss $\mathcal{L}_\varphi$ used in tr
 Here $\mathcal{L}_f$ is the frequency loss. <br>
 To use $Q$ as part of the training regimes for the methods listed above, we empirically set $\beta$ to 0.1 for ARKNet, 0.01 for XY-Deblur and 0.1 for EHNet. 
 
+## Metric $\Omega$
+
+
 ## References
 [1] Seo-Won Ji, Jeongmin Lee, Seung-Wook Kim, Jun-Pyo Hong, Seung-Jin Baek, Seung-Won Jung, and Sung-Jea Ko, “Xydeblur: divide and conquer for single image deblurring,” in Proceedings of the IEEE/CVF conference on computer vision and pattern recognition, 2022, pp.17421–17430
 [2] Quoc-Thien Ho, Minh-Thien Duong, Seongsoo Lee, and Min-Cheol Hong, “Ehnet: Efficient hybrid network with dual attention for image deblurring,” Sensors, vol. 24, no. 20, pp. 6545, 2024.
