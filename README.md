@@ -31,6 +31,13 @@ EHNet proposed by Ho et. al. [2] is a transformer based architecture that combin
 The image from has been taken from the paper - [3](https://ieeexplore.ieee.org/abstract/document/10743912) <br>
 ARKNet proposed by Aurangabadkar et. al. [3] is a standard U-Net based architecture comprising of 4 encoder layers, where each layer consists of 5 convolutional blocks. Each block, in turn, comprises of a single 3 × 3 convolution layer, followed by Batch Normalization and GELU activation. The model contains a total of 4.2 million trainable parameters.
 
+## Loss Functions
+### XY-Deblur
+XY-Deblur was trained on $l_1$ loss given as follows.
+```math
+l_1 = |I - \tilde{I}|
+```
+
 ## References
 [1] Seo-Won Ji, Jeongmin Lee, Seung-Wook Kim, Jun-Pyo Hong, Seung-Jin Baek, Seung-Won Jung, and Sung-Jea Ko, “Xydeblur: divide and conquer for single image deblurring,” in Proceedings of the IEEE/CVF conference on computer vision and pattern recognition, 2022, pp.17421–17430
 [2] Quoc-Thien Ho, Minh-Thien Duong, Seongsoo Lee, and Min-Cheol Hong, “Ehnet: Efficient hybrid network with dual attention for image deblurring,” Sensors, vol. 24, no. 20, pp. 6545, 2024.
