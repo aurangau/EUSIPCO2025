@@ -67,7 +67,7 @@ To measure $\Omega$, we first divide the images - GT ($I$) and restored (\tilde{
 ```
 A higher value of $\alpha$ corresponds to the presence of ringing in the restored patch. We then measure PSNR between the two patches, clipping it at 50 dB as to avoid producing a value of $\infty$ when both patches are identical. This can be mathematically defined as follows.
 ```math
-P' = \min{PSNR(p, \tilde{p}), 50}
+P' = \min{(PSNR(p, \tilde{p}), 50)}
 ```
 
 ## References
