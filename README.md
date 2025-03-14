@@ -36,7 +36,7 @@ We first define a restored image as $\tilde{I}$ and a Ground Truth (GT) image as
 ```math
 \mathcal{L} = \mathcal{L}_\varphi (I, \tilde{I}) - \beta \cdot Q(\tilde{I})
 ```
-Table 1 shows the model and the associated loss $\mathcal{L}_\varphi$ used in training.
+Table 1 shows the model and the associated loss $\mathcal{L}_\varphi$ used in training. <br>
 **Table 1: Models and their losses**
 | Model Name | $\mathcal{L}_\varphi$ |
 | ---------- | -------------------- |
@@ -44,7 +44,8 @@ Table 1 shows the model and the associated loss $\mathcal{L}_\varphi$ used in tr
 | ARKNet     |    $\mathcal{l_1}$   |
 | EHNet      | $\mathcal{l_1}$ + $\lambda$ $\cdot$ $\mathcal{L}_f$ |
 
-XY-Deblur uses the $\mathcal{l_1}$ loss 
+Here $\mathcal{L}_f$ is the frequency loss. <br>
+To use $Q$ as part of the training regimes for the methods listed above, we empirically set $\beta$ to 0.1 for ARKNet, 0.01 for XY-Deblur and 0.1 for EHNet. 
 
 ## References
 [1] Seo-Won Ji, Jeongmin Lee, Seung-Wook Kim, Jun-Pyo Hong, Seung-Jin Baek, Seung-Won Jung, and Sung-Jea Ko, “Xydeblur: divide and conquer for single image deblurring,” in Proceedings of the IEEE/CVF conference on computer vision and pattern recognition, 2022, pp.17421–17430
