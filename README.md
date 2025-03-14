@@ -49,7 +49,7 @@ To use $Q$ as part of the training regimes for the methods listed above, we empi
 
 ## Metric $\Omega$
 We wish to devise a metric which increases with sharpness, but decreases with ringing artifacts present in an image. We must note that PSNR works correctly, albeit it lacks the information and knowledge about sharpness, thus leading to a low value even for images that are sharp and have no artifacts. $Q$ is reliable when the PSNR is high, but becomes unreliable when the PSNR is low. An example of this can be seen in Figure 4. 
-![Plots](Omega_Plots/composite_Plot_upd.png)
+![Fig. 4: Behaviour of $\Omega$](Omega_Plots/composite_Plot_upd.png)
 
 Therefore, our goal is to combine the both in a non-linear fashion, thus proposing $\Omega$ which is calculated per patch and is then averaged for the entire image. 
 
