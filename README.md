@@ -53,8 +53,10 @@ We wish to devise a metric which increases with sharpness, but decreases with ri
 | --- |
 | Figure 4: Behaviour of $\Omega$ | 
 
-
-Therefore, our goal is to combine the both in a non-linear fashion, thus proposing $\Omega$ which is calculated per patch and is then averaged for the entire image. 
+Therefore, our goal is to combine the both in a non-linear fashion, thus proposing $\Omega$ which is calculated per patch and is then averaged for the entire image. The intuition behind such a metric is based on the idea of giving more weight to PSNR for a patch that has high ringing and $Q$ when a patch has low ringing. The weighting function used is a sigmoid given as follows.
+```math
+\sigma(\alpha)  = \frac{1}{1 + e^{R(\alpha - \alpha_0)}}
+```
 
 ## References
 [1] Seo-Won Ji, Jeongmin Lee, Seung-Wook Kim, Jun-Pyo Hong, Seung-Jin Baek, Seung-Won Jung, and Sung-Jea Ko, “Xydeblur: divide and conquer for single image deblurring,” in Proceedings of the IEEE/CVF conference on computer vision and pattern recognition, 2022, pp.17421–17430
