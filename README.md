@@ -32,11 +32,7 @@ The image from has been taken from the paper - [3](https://ieeexplore.ieee.org/a
 ARKNet proposed by Aurangabadkar et. al. [3] is a standard U-Net based architecture comprising of 4 encoder layers, where each layer consists of 5 convolutional blocks. Each block, in turn, comprises of a single 3 × 3 convolution layer, followed by Batch Normalization and GELU activation. The model contains a total of 4.2 million trainable parameters.
 
 ## Loss Functions
-### XY-Deblur
-XY-Deblur was trained on $l_1$ loss given as follows.
-```math
-l_1 = |I - \tilde{I}|
-```
+We first define a restored image as $\tilde{I}$ and a Ground Truth (GT) image as $I$. Let us now list the losses that were used by the authors to train their models initially. XY-Deblur uses the $\mathbr{l_1}$ loss 
 
 ## References
 [1] Seo-Won Ji, Jeongmin Lee, Seung-Wook Kim, Jun-Pyo Hong, Seung-Jin Baek, Seung-Won Jung, and Sung-Jea Ko, “Xydeblur: divide and conquer for single image deblurring,” in Proceedings of the IEEE/CVF conference on computer vision and pattern recognition, 2022, pp.17421–17430
