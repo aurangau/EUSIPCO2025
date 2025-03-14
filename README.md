@@ -41,7 +41,7 @@ Table 1 shows the model and the associated loss $\mathcal{L}_\varphi$ used in tr
 | Model Name | $\mathcal{L}_\varphi$ |
 | ---------- | -------------------- |
 | XY- Deblur |    $\mathcal{l_1}$   |
-| EHNet      | $\mathcal{l_1}$ + $\lambda$ $\cdot$  $\mathcal{F}(I)$ |
+| EHNet      | $\mathcal{l_1}$ + $\lambda$ $\cdot$ || $\mathcal{F}(I)$ || |
 
 XY-Deblur uses the $\mathcal{l_1}$ loss 
 
