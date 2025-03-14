@@ -59,6 +59,17 @@ Therefore, our goal is to combine the both in a non-linear fashion, thus proposi
 ```
 
 For the experiments listed in the paper, for the experiments listed in the paper, we use $R$ = 5 and $\alpha_0$ = 1.2. These parameters control the amount of _acceptable sharpness_. Therefore, an increase in sharpness leads to an increase in $\Omega$ and when ringing artifacts set in, $\Omega$ decreases. 
+
+### Measuring $\Omega$
+To measure $\Omega$, we first divide the images - GT ($I$) and restored (\tilde{I}) into non-overlapping patches of size $m \times m$. A patch from the GT image is denoted by $p$ and a patch from the restored image is denoted by $\tilde{p}$. For each patch from both the images, we measure the corresponding $Q$ values, which we denote by $Q$ for the GT patch and $\tilde{Q}$ for the restored patch. To determine the _amount_ of ringing, we measure a deviation ratio $\alpha$ which can be given as follows.
+```math
+\alpha = \frac{|\tilde{Q} - Q}{Q}
+```
+A higher value of $\alpha$ corresponds to the presence of ringing in the restored patch. We then measure PSNR between the two patches, clipping it at 50 dB as to avoid producing a value of $\infty$ when both patches are identical. This can be mathematically defined as follows.
+```math
+P' = \min{PSNR(p, \tilde{p}), 50}
+```
+
 ## References
 [1] Seo-Won Ji, Jeongmin Lee, Seung-Wook Kim, Jun-Pyo Hong, Seung-Jin Baek, Seung-Won Jung, and Sung-Jea Ko, “Xydeblur: divide and conquer for single image deblurring,” in Proceedings of the IEEE/CVF conference on computer vision and pattern recognition, 2022, pp.17421–17430
 [2] Quoc-Thien Ho, Minh-Thien Duong, Seongsoo Lee, and Min-Cheol Hong, “Ehnet: Efficient hybrid network with dual attention for image deblurring,” Sensors, vol. 24, no. 20, pp. 6545, 2024.
