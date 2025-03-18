@@ -75,9 +75,13 @@ Finally, we combine the two metrics using the weighting function as follows.
 ```
 An example of the behaviour of this metric can be seen in Figure 5. Here, an image from the Kodak dataset has been sharpened with 5 different sharpness values - 0.8, 1.3, 1.8, 2.5, 11.8 and 13.8. The numbers have been chosen to demonstrate the difference between _acceptable_ sharpness and ringing artifacts. 
 
-![GT Image](Ringing_Examples/GT.png) | ![$\gamma$ = 0.8](Ringing_Examples/sharp08.png) | ![$\gamma$ = 1.3](Ringing_Examples/sharp13.png)
+![GT Image](Ringing_Examples/GT.png) | ![$\gamma$ = 0.8](Ringing_Examples/sharp08.png) | ![$\gamma$ = 1.3](Ringing_Examples/sharp13.png) |
 | --- | --- | --- |
 | GT Image | $\gamma$ = 0.8 | $\gamma$ = 1.3 |
+
+![$\gamma$ = 2.5](Ringing_Examples/sharp25.png) | ![$\gamma$ = 11.8](Ringing_Examples/sharp118.png) | ![$\gamma$ = 13.8](Ringing_Examples/sharp138.png) |
+| --- | --- | --- |
+| $\gamma$ = 2.5 | $\gamma$ = 11.8 | $\gamma$ = 13.8 | 
 
 ## Experimental Results
 
