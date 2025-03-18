@@ -77,11 +77,11 @@ An example of the behaviour of this metric can be seen in Figure 5. Here, an ima
 
 ![GT Image](Ringing_Examples/GT.png) | ![$\gamma$ = 0.8](Ringing_Examples/sharp08.png) | ![$\gamma$ = 1.3](Ringing_Examples/sharp13.png) |
 | --- | --- | --- |
-| GT Image; PSNR = -; $\Omega$ = -; $Q$ = 0.08 | $\gamma$ = 0.8; PSNR = 26.54; $\Omega$ = 1.59; $Q$ = 0.13 | $\gamma$ = 1.3 |
+| GT Image; PSNR = -; $\Omega$ = -; $Q$ = 0.08 | $\gamma$ = 0.8; PSNR = 26.54; $\Omega$ = 1.59; $Q$ = 0.13 | $\gamma$ = 1.3; PSNR = 22.55; $\Omega$ = 5.85; $Q$ = 0.15 |
 
 ![$\gamma$ = 2.5](Ringing_Examples/sharp25.png) | ![$\gamma$ = 11.8](Ringing_Examples/sharp118.png) | ![$\gamma$ = 13.8](Ringing_Examples/sharp138.png) |
 | --- | --- | --- |
-| $\gamma$ = 2.5 | $\gamma$ = 11.8 | $\gamma$ = 13.8 | 
+| $\gamma$ = 2.5; PSNR = 20.02; $\Omega$ = 11.09; $Q$ = 0.17 | $\gamma$ = 11.8; PSNR = 10.48; $\Omega$ = 10.98; $Q$ = 0.17 | $\gamma$ = 13.8; PSNR = 10.08; $\Omega$ = 10.50; $Q$ = 0.36 | 
 
 ## Experimental Results
 
