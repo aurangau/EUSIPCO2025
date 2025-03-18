@@ -94,6 +94,8 @@ In Figure 6, we demonstrate the perfomance of 3 different methods on an image fr
 | --- | 
 | Figure 7: Performance of XY-Deblur on images from three datasets |
 
+Figure 7 shows the results of XY-Deblur on images from the three different datasets. The first rows shows an image from RealDOF dataset, the second row shows an image from the DPDD dataset and the third row shows an image from the ARK dataset. The first column is the GT image. The second column is the blurry image. The third column is the image restored using $\mathcal{L}$ as a loss. The fourth column is the image restored using $\mathcal{L}_\varphi$ as a loss. 
+
 ## References
 [1] Seo-Won Ji, Jeongmin Lee, Seung-Wook Kim, Jun-Pyo Hong, Seung-Jin Baek, Seung-Won Jung, and Sung-Jea Ko, “Xydeblur: divide and conquer for single image deblurring,” in Proceedings of the IEEE/CVF conference on computer vision and pattern recognition, 2022, pp.17421–17430
 [2] Quoc-Thien Ho, Minh-Thien Duong, Seongsoo Lee, and Min-Cheol Hong, “Ehnet: Efficient hybrid network with dual attention for image deblurring,” Sensors, vol. 24, no. 20, pp. 6545, 2024.
