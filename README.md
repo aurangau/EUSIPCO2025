@@ -84,6 +84,11 @@ An example of the behaviour of this metric can be seen in Figure 5. Here, an ima
 | $\gamma$ = 2.5; PSNR = 20.02; $\Omega$ = 11.09; $Q$ = 0.17 | $\gamma$ = 11.8; PSNR = 10.48; $\Omega$ = 10.98; $Q$ = 0.17 | $\gamma$ = 13.8; PSNR = 10.08; $\Omega$ = 10.50; $Q$ = 0.36 | 
 
 ## Experimental Results
+![ARKNet performance](Experimental_Results/ARKNet_singleMontage_updated.png) |
+| --- |
+| Performance of different methods on an image from the ARK Dataset |
+
+In the Figure above, we demonstrate the perfomance of 3 different methods on an image from the ARK dataset. The images denoted by $G$ and $B$ are the GT and Blurry images respectively. The images denoted by $A$, $X$ and $E$ are the ones restored by ARKNet, XY-Deblur and EHNet without $Q$ as a loss. Those denoted by $A_Q$, $X_Q$ and $E_Q$ are the ARKNet, XY-Deblur and EHNet where $Q$ was used as a loss.
 
 
 ## References
