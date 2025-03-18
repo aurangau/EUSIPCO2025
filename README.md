@@ -75,6 +75,9 @@ Finally, we combine the two metrics using the weighting function as follows.
 ```
 An example of the behaviour of this metric can be seen in Figure 5. Here, an image from the Kodak dataset has been sharpened with 5 different sharpness values - 0.8, 1.3, 1.8, 2.5, 11.8 and 13.8. The numbers have been chosen to demonstrate the difference between _acceptable_ sharpness and ringing artifacts. 
 
+## Experimental Results
+
+
 ## References
 [1] Seo-Won Ji, Jeongmin Lee, Seung-Wook Kim, Jun-Pyo Hong, Seung-Jin Baek, Seung-Won Jung, and Sung-Jea Ko, “Xydeblur: divide and conquer for single image deblurring,” in Proceedings of the IEEE/CVF conference on computer vision and pattern recognition, 2022, pp.17421–17430
 [2] Quoc-Thien Ho, Minh-Thien Duong, Seongsoo Lee, and Min-Cheol Hong, “Ehnet: Efficient hybrid network with dual attention for image deblurring,” Sensors, vol. 24, no. 20, pp. 6545, 2024.
