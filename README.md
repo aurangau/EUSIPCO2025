@@ -86,10 +86,13 @@ An example of the behaviour of this metric can be seen in Figure 5. Here, an ima
 ## Experimental Results
 ![ARKNet performance](Experimental_Results/ARKNet_singleMontage_updated.png) |
 | --- |
-| Performance of different methods on an image from the ARK Dataset |
+| Figure 6: Performance of different methods on an image from the ARK Dataset |
 
-In the Figure above, we demonstrate the perfomance of 3 different methods on an image from the ARK dataset. The images denoted by $G$ and $B$ are the GT and Blurry images respectively. The images denoted by $A$, $X$ and $E$ are the ones restored by ARKNet, XY-Deblur and EHNet without $Q$ as a loss. Those denoted by $A_Q$, $X_Q$ and $E_Q$ are the ARKNet, XY-Deblur and EHNet where $Q$ was used as a loss.
+In Figure 6, we demonstrate the perfomance of 3 different methods on an image from the ARK dataset. The images denoted by $G$ and $B$ are the GT and Blurry images respectively. The images denoted by $A$, $X$ and $E$ are the ones restored by ARKNet, XY-Deblur and EHNet without $Q$ as a loss. Those denoted by $A_Q$, $X_Q$ and $E_Q$ are the ARKNet, XY-Deblur and EHNet where $Q$ was used as a loss.
 
+![XY-Deblur performance](Experimental_Results/XYD_restoration_White.png) |
+| --- | 
+| Figure 7: Performance of XY-Deblur on images from three datasets |
 
 ## References
 [1] Seo-Won Ji, Jeongmin Lee, Seung-Wook Kim, Jun-Pyo Hong, Seung-Jin Baek, Seung-Won Jung, and Sung-Jea Ko, “Xydeblur: divide and conquer for single image deblurring,” in Proceedings of the IEEE/CVF conference on computer vision and pattern recognition, 2022, pp.17421–17430
