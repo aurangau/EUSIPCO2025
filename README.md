@@ -77,6 +77,7 @@ An example of the behaviour of this metric can be seen in Figure 5. Here, an ima
 
 ![GT Image](Ringing_Examples/GT.png) | ![$\gamma$ = 0.8](Ringing_Examples/sharp08.png) | ![$\gamma$ = 1.3](Ringing_Examples/sharp13.png)
 | --- | --- | --- |
+| GT Image | $\gamma$ = 0.8 | $\gamma$ = 1.3 |
 
 ## Experimental Results
 
